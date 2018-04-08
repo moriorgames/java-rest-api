@@ -11,6 +11,7 @@ node {
     stage('Test') {
         echo 'Testing...'
         sh 'docker run -td --name java_rest_api -p 8081:8080 moriorgames/java-rest-api'
+        sleep 60
         sh 'docker exec java_rest_api ./gradlew test'
     }
 
