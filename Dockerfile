@@ -1,7 +1,7 @@
 # Build command:
 # docker build -t moriorgames/java-rest-api .
 # Run command:
-# docker run -td --name java_rest_api -p 8080:8080 moriorgames/java-rest-api
+# docker run -td --name java_rest_api -p 8081:8080 moriorgames/java-rest-api
 FROM java:8-jdk
 MAINTAINER MoriorGames "moriorgames@gmail.com"
 
